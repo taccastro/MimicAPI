@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI.csproj": {}
+    "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI.csproj": {
+    "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI.csproj",
-        "projectName": "MimicAPI",
-        "projectPath": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj",
+        "projectName": "MimicAPI_sqllite",
+        "projectPath": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj",
         "packagesPath": "C:\\Users\\Tiago\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\obj\\",
         "projectStyle": "PackageReference",

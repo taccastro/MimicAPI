@@ -13720,11 +13720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj",
-      "projectName": "MimicAPI",
-      "projectPath": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj",
+      "projectName": "MimicAPI_sqllite",
+      "projectPath": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj",
       "packagesPath": "C:\\Users\\Tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\obj\\",
+      "outputPath": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

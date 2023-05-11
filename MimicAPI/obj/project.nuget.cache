@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rrz5i2iNFLiQyYJGnFluVtqGHWug2TMwYd30OW8A8+tA5PqpQyHEVGFETwjfvwQ0CHjt4THsrXvs7F4oVe0rdg==",
+  "dgSpecHash": "KrcKRUBeDRHlkmqBTmraTPb/s5AyZ7DBTdNGBJYGOJbThWw9qjG2hHfjpRImKKLdnRYtgwfFdBzK/xOGN11qng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj",
+  "projectFilePath": "C:\\Users\\Tiago\\source\\Repos\\API\\MimicAPI\\MimicAPI_sqllite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tiago\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
