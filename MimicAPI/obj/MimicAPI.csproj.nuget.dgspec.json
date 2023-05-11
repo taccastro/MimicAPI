@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tiago Castro\\Desktop\\ASP.NETCoreWebAPI-master\\Código-Fonte - Compactado\\Seção 07\\01-MimicAPI\\01-MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj": {}
+    "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tiago Castro\\Desktop\\ASP.NETCoreWebAPI-master\\Código-Fonte - Compactado\\Seção 07\\01-MimicAPI\\01-MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj": {
+    "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tiago Castro\\Desktop\\ASP.NETCoreWebAPI-master\\Código-Fonte - Compactado\\Seção 07\\01-MimicAPI\\01-MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj",
         "projectName": "MimicAPI",
-        "projectPath": "C:\\Users\\Tiago Castro\\Desktop\\ASP.NETCoreWebAPI-master\\Código-Fonte - Compactado\\Seção 07\\01-MimicAPI\\01-MimicAPI\\MimicAPI\\MimicAPI\\MimicAPI.csproj",
-        "packagesPath": "C:\\Users\\Tiago Castro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tiago Castro\\Desktop\\ASP.NETCoreWebAPI-master\\Código-Fonte - Compactado\\Seção 07\\01-MimicAPI\\01-MimicAPI\\MimicAPI\\MimicAPI\\obj\\",
+        "projectPath": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\MimicAPI.csproj",
+        "packagesPath": "C:\\Users\\Tiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tiago\\Source\\Repos\\API-REST-NetCore\\MimicAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Tiago Castro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -31,6 +29,7 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {}
           }
         },
@@ -42,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -97,11 +97,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -299,3 +299,23 @@ C:\Users\Tiago Castro\Desktop\ASP.NETCoreWebAPI-master\Código-Fonte - Compactad
 C:\Users\Tiago Castro\Desktop\ASP.NETCoreWebAPI-master\Código-Fonte - Compactado\Seção 07\01-MimicAPI\01-MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.dll
 C:\Users\Tiago Castro\Desktop\ASP.NETCoreWebAPI-master\Código-Fonte - Compactado\Seção 07\01-MimicAPI\01-MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.pdb
 C:\Users\Tiago Castro\Desktop\ASP.NETCoreWebAPI-master\Código-Fonte - Compactado\Seção 07\01-MimicAPI\01-MimicAPI\MimicAPI\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.genruntimeconfig.cache
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\Database\Mimic.db
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.xml
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.deps.json
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.runtimeconfig.json
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.runtimeconfig.dev.json
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.dll
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\bin\Debug\netcoreapp2.2\MimicAPI.pdb
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.csproj.AssemblyReference.cache
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.AssemblyInfoInputs.cache
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.AssemblyInfo.cs
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.csproj.CoreCompileInputs.cache
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.RazorAssemblyInfo.cache
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.RazorAssemblyInfo.cs
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.dll
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.pdb
+C:\Users\Tiago\Source\Repos\API-REST-NetCore\MimicAPI\obj\Debug\netcoreapp2.2\MimicAPI.genruntimeconfig.cache
