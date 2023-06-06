@@ -36,7 +36,7 @@ namespace MimicAPI.V1.Repositories
                 paginacao.TotalRegistros = quantidadeTotalRegistros;
                 paginacao.TotalPaginas = (int)Math.Ceiling((double)quantidadeTotalRegistros / query.PagRegistro.Value);
 
-                lista.Paginacao = paginacao;                
+                lista.Paginacao = paginacao;
             }
 
             lista.Results.AddRange(item.ToList());

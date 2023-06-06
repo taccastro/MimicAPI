@@ -13720,11 +13720,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tiago Castro\\Source\\Repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MimicAPI\\MimicAPI_sqllite.csproj",
-      "projectName": "MimicAPI_sqllite",
-      "projectPath": "C:\\Users\\Tiago Castro\\Source\\Repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MimicAPI\\MimicAPI_sqllite.csproj",
+      "projectUniqueName": "C:\\Users\\Tiago Castro\\source\\repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MimicAPI\\MimicAPI.csproj",
+      "projectName": "MimicAPI",
+      "projectPath": "C:\\Users\\Tiago Castro\\source\\repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MimicAPI\\MimicAPI.csproj",
       "packagesPath": "C:\\Users\\Tiago Castro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tiago Castro\\Source\\Repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MimicAPI\\obj\\",
+      "outputPath": "C:\\Users\\Tiago Castro\\source\\repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MimicAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

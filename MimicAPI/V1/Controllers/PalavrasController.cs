@@ -35,7 +35,7 @@ namespace MimicAPI.V1.Controllers
         [MapToApiVersion("1.1")]
         //APP -- /api/palavras
         [HttpGet("", Name = "ObterTodas")]
-        public ActionResult ObterTodas([FromQuery]PalavraUrlQuery query)
+        public ActionResult ObterTodas([FromQuery] PalavraUrlQuery query)
         {
             var item = _repository.ObterPalavras(query);
 
@@ -68,7 +68,7 @@ namespace MimicAPI.V1.Controllers
 
             PalavraDTO palavraDTO = _mapper.Map<Palavra, PalavraDTO>(obj);
             palavraDTO.Links.Add(
-                new LinkDTO("self", Url.Link("ObterPalavra", new { id = palavraDTO.Id }), "GET") 
+                new LinkDTO("self", Url.Link("ObterPalavra", new { id = palavraDTO.Id }), "GET")
             );
             palavraDTO.Links.Add(
                 new LinkDTO("update", Url.Link("AtualizarPalavra", new { id = palavraDTO.Id }), "PUT")
@@ -93,7 +93,7 @@ namespace MimicAPI.V1.Controllers
         // -- /api/palavras(POST: id, nome, ativo, pontuacao, criacao)
         [Route("")]
         [HttpPost]
-        public ActionResult Cadastrar([FromBody]Palavra palavra)
+        public ActionResult Cadastrar([FromBody] Palavra palavra)
         {
             if (palavra == null)
                 return BadRequest();
@@ -105,7 +105,7 @@ namespace MimicAPI.V1.Controllers
             palavra.Criado = DateTime.Now;
             _repository.Cadastrar(palavra);
 
-            PalavraDTO palavraDTO =_mapper.Map<Palavra, PalavraDTO>(palavra);
+            PalavraDTO palavraDTO = _mapper.Map<Palavra, PalavraDTO>(palavra);
             palavraDTO.Links.Add(
                 new LinkDTO("self", Url.Link("ObterPalavra", new { id = palavraDTO.Id }), "GET")
             );
@@ -123,7 +123,7 @@ namespace MimicAPI.V1.Controllers
         [MapToApiVersion("1.1")]
         // -- /api/palavras/1 (PUT: id, nome, ativo, pontuacao, criacao)
         [HttpPut("{id}", Name = "AtualizarPalavra")]
-        public ActionResult Atualizar(int id, [FromBody]Palavra palavra)
+        public ActionResult Atualizar(int id, [FromBody] Palavra palavra)
         {
             var obj = _repository.Obter(id);
             if (obj == null)
@@ -165,11 +165,11 @@ namespace MimicAPI.V1.Controllers
             if (palavra == null)
                 return NotFound();
 
-            _repository.Deletar(id);            
+            _repository.Deletar(id);
 
             return NoContent();
         }
-        
+
         private PaginationList<PalavraDTO> CriarLinksListPalavraDTO(PalavraUrlQuery query, PaginationList<Palavra> item)
         {
             var lista = _mapper.Map<PaginationList<Palavra>, PaginationList<PalavraDTO>>(item);

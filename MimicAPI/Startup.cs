@@ -22,19 +22,22 @@ namespace MimicAPI
         public void ConfigureServices(IServiceCollection services)
         {
             #region AutoMapper-Config
-            var config = new MapperConfiguration(cfg => {
+            var config = new MapperConfiguration(cfg =>
+            {
                 cfg.AddProfile(new DTOMapperProfile());
             });
             IMapper mapper = config.CreateMapper();
             services.AddSingleton(mapper);
             #endregion
 
-            services.AddDbContext<MimicContext>(opt => {
+            services.AddDbContext<MimicContext>(opt =>
+            {
                 opt.UseSqlite("Data Source=Database\\Mimic.db");
             });
             services.AddMvc();
             services.AddScoped<IPalavraRepository, PalavraRepository>();
-            services.AddApiVersioning(cfg=> {
+            services.AddApiVersioning(cfg =>
+            {
                 cfg.ReportApiVersions = true;
 
                 //cfg.ApiVersionReader = new HeaderApiVersionReader("api-version");
@@ -42,7 +45,8 @@ namespace MimicAPI
                 cfg.DefaultApiVersion = new Microsoft.AspNetCore.Mvc.ApiVersion(1, 0);
             });
 
-            services.AddSwaggerGen(cfg => {
+            services.AddSwaggerGen(cfg =>
+            {
                 cfg.ResolveConflictingActions(apiDescription => apiDescription.First());
                 cfg.SwaggerDoc("v2.0", new Swashbuckle.AspNetCore.Swagger.Info()
                 {
@@ -54,7 +58,8 @@ namespace MimicAPI
                     Title = "MimicAPI - V1.1",
                     Version = "v1.1"
                 });
-                cfg.SwaggerDoc("v1.0", new Swashbuckle.AspNetCore.Swagger.Info() {
+                cfg.SwaggerDoc("v1.0", new Swashbuckle.AspNetCore.Swagger.Info()
+                {
                     Title = "MimicAPI - V1.0",
                     Version = "v1.0"
                 });
@@ -99,7 +104,8 @@ namespace MimicAPI
             app.UseMvc();
 
             app.UseSwagger(); // /swagger/v1/swagger.json
-            app.UseSwaggerUI(cfg=> {
+            app.UseSwaggerUI(cfg =>
+            {
                 cfg.SwaggerEndpoint("/swagger/v2.0/swagger.json", "MimicAPI - V2.0");
                 cfg.SwaggerEndpoint("/swagger/v1.1/swagger.json", "MimicAPI - V1.1");
                 cfg.SwaggerEndpoint("/swagger/v1.0/swagger.json", "MimicAPI - V1.0");
