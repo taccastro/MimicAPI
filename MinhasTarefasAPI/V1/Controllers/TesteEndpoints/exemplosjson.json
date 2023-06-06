@@ -1,0 +1,8 @@
+https: //localhost:44399/api/usuario/login
+
+{
+  "email": "TIAGOCASTRO@TESTE.COM.BR",
+  "senha": "Ta12346!"
+}
+
+
