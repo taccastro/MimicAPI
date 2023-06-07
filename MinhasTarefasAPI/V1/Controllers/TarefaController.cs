@@ -6,7 +6,6 @@ using MinhasTarefasAPI.V1.Models;
 using MinhasTarefasAPI.V1.Repositories.Contracts;
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace MinhasTarefasAPI.V1.Controllers
 {
@@ -22,6 +21,14 @@ namespace MinhasTarefasAPI.V1.Controllers
             _tarefaRepository = tarefaRepository;
             _userManager = userManager;
         }
+
+        
+        [HttpGet("modelo")]
+        public ActionResult modelo()
+        {
+            return Ok(new Tarefa());
+        }
+
 
         [Authorize]
         [HttpPost("sincronizar")]
