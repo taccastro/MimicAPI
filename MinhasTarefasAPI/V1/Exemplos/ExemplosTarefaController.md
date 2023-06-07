@@ -44,7 +44,7 @@ https://localhost:44399/api/tarefa/restaurar
 
 
  
-
+ Recriar o banco / dotnet ef update database
 
 
 

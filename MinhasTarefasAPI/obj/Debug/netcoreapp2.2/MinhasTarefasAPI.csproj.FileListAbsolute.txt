@@ -284,7 +284,6 @@ C:\Users\Tiago Castro\Downloads\ASP.NETCoreWebAPI-master\ASP.NETCoreWebAPI-maste
 C:\Users\Tiago Castro\Downloads\ASP.NETCoreWebAPI-master\ASP.NETCoreWebAPI-master\Código-Fonte - Passo a Passo\Seção 07\02-MinhasTarefasAPI\MinhasTarefasAPI\MinhasTarefasAPI\obj\Debug\netcoreapp2.2\MinhasTarefasAPI.genruntimeconfig.cache
 C:\Users\Tiago Castro\source\repos\csharp.ASP.NET-CORE-Web-API-Rest\MinhasTarefasAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Users\Tiago Castro\source\repos\csharp.ASP.NET-CORE-Web-API-Rest\MinhasTarefasAPI\bin\Debug\netcoreapp2.2\appsettings.json
-C:\Users\Tiago Castro\source\repos\csharp.ASP.NET-CORE-Web-API-Rest\MinhasTarefasAPI\bin\Debug\netcoreapp2.2\Database\MinhasTarefas.db
 C:\Users\Tiago Castro\source\repos\csharp.ASP.NET-CORE-Web-API-Rest\MinhasTarefasAPI\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.xml
 C:\Users\Tiago Castro\source\repos\csharp.ASP.NET-CORE-Web-API-Rest\MinhasTarefasAPI\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.deps.json
 C:\Users\Tiago Castro\source\repos\csharp.ASP.NET-CORE-Web-API-Rest\MinhasTarefasAPI\bin\Debug\netcoreapp2.2\MinhasTarefasAPI.runtimeconfig.json
