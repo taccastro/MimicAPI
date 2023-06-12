@@ -14552,23 +14552,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tiago\\.nuget\\packages\\": {},
+    "C:\\Users\\Tiago Castro\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tiago\\Source\\Repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MinhasTarefasAPI\\MinhasTarefasAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Tiago Castro\\source\\repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MinhasTarefasAPI\\MinhasTarefasAPI.csproj",
       "projectName": "MinhasTarefasAPI",
-      "projectPath": "C:\\Users\\Tiago\\Source\\Repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MinhasTarefasAPI\\MinhasTarefasAPI.csproj",
-      "packagesPath": "C:\\Users\\Tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tiago\\Source\\Repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MinhasTarefasAPI\\obj\\",
+      "projectPath": "C:\\Users\\Tiago Castro\\source\\repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MinhasTarefasAPI\\MinhasTarefasAPI.csproj",
+      "packagesPath": "C:\\Users\\Tiago Castro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tiago Castro\\source\\repos\\csharp.ASP.NET-CORE-Web-API-Rest\\MinhasTarefasAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tiago Castro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -14576,6 +14576,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -14647,7 +14648,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

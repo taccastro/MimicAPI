@@ -1,5 +1,7 @@
 # Controller Tarefa  
 
+Para executar no swagger trocar url para > https://localhost:44399/index.html
+
 POST > Cad User  
 https://localhost:44399/api/usuario
 
@@ -40,10 +42,7 @@ https://localhost:44399/api/tarefa/sincronizar
 
 GET > Obter Tarefas 
 https://localhost:44399/api/tarefa/restaurar
- 
-
-
- 
+  
  Recriar o banco / dotnet ef update database
 
 
