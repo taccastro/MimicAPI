@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MimicAPI", "MimicAPI\MimicA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinhasTarefasAPI", "MinhasTarefasAPI\MinhasTarefasAPI.csproj", "{83301A45-CC15-4EA8-AD6C-4C983AFC8FEA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkToApi", "TalkToApi\TalkToApi.csproj", "{6453B7D6-4FC5-404D-A9CE-72EFB67DCB72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkToWeb", "TalkToWeb\TalkToWeb.csproj", "{793DE99A-97CE-44CA-9841-7918D2074A58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{83301A45-CC15-4EA8-AD6C-4C983AFC8FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83301A45-CC15-4EA8-AD6C-4C983AFC8FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83301A45-CC15-4EA8-AD6C-4C983AFC8FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6453B7D6-4FC5-404D-A9CE-72EFB67DCB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6453B7D6-4FC5-404D-A9CE-72EFB67DCB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6453B7D6-4FC5-404D-A9CE-72EFB67DCB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6453B7D6-4FC5-404D-A9CE-72EFB67DCB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793DE99A-97CE-44CA-9841-7918D2074A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793DE99A-97CE-44CA-9841-7918D2074A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793DE99A-97CE-44CA-9841-7918D2074A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793DE99A-97CE-44CA-9841-7918D2074A58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

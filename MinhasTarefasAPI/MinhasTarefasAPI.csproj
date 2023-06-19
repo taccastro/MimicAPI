@@ -38,8 +38,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="V1\Exemplos\" />
-  </ItemGroup>
-
 </Project>
