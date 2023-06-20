@@ -38,6 +38,79 @@ namespace TalkToApi.V1.Controllers
             _tokenRepository = tokenRepository;
         }
 
+        [HttpPost("login")]
+        public ActionResult Login([FromBody] UsuarioDTO usuarioDTO)
+        {
+            ModelState.Remove("Nome");
+            ModelState.Remove("ConfirmacaoSenha");
+
+            if (ModelState.IsValid)
+            {
+                ApplicationUser usuario = _usuarioRepository.Obter(usuarioDTO.Email, usuarioDTO.Senha);
+                if (usuario != null)
+                {
+                    //Login no Identity
+                    //_signInManager.SignInAsync(usuario, false);
+
+
+                    //retorna o Token (JWT)
+                    return GerarToken(usuario);
+                }
+                else
+                {
+                    return NotFound("Usuário não localizado!");
+                }
+            }
+            else
+            {
+                return UnprocessableEntity(ModelState);
+            }
+        }
+
+
+        [HttpPost("", Name = "UsuarioCadastrar")]
+        public ActionResult Cadastrar([FromBody] UsuarioDTO usuarioDTO, [FromHeader(Name = "Accept")] string mediaType)
+        {
+            if (ModelState.IsValid)
+            {
+                ApplicationUser usuario = _mapper.Map<UsuarioDTO, ApplicationUser>(usuarioDTO);
+
+                var resultado = _userManager.CreateAsync(usuario, usuarioDTO.Senha).Result;
+
+                if (!resultado.Succeeded)
+                {
+                    List<string> erros = new List<string>();
+                    foreach (var erro in resultado.Errors)
+                    {
+                        erros.Add(erro.Description);
+                    }
+                    return UnprocessableEntity(erros);
+                }
+                else
+                {
+                    if (mediaType == CustomMediaType.Hateoas)
+                    {
+                        var usuarioDTOdb = _mapper.Map<ApplicationUser, UsuarioDTO>(usuario);
+                        usuarioDTOdb.Links.Add(new LinkDTO("_self", Url.Link("UsuarioCadastrar", new { id = usuario.Id }), "POST"));
+                        usuarioDTOdb.Links.Add(new LinkDTO("_obter", Url.Link("UsuarioObter", new { id = usuario.Id }), "GET"));
+                        usuarioDTOdb.Links.Add(new LinkDTO("_atualizar", Url.Link("UsuarioAtualizar", new { id = usuario.Id }), "PUT"));
+
+                        return Ok(usuarioDTOdb);
+                    }
+                    else
+                    {
+                        var usuarioResult = _mapper.Map<ApplicationUser, UsuarioDTOSemHyperlink>(usuario);
+                        return Ok(usuarioResult);
+                    }
+                }
+
+            }
+            else
+            {
+                return UnprocessableEntity(ModelState);
+            }
+        }
+
         [Authorize]
         [HttpGet("", Name = "UsuarioObterTodos")]
         [DisableCors()]
@@ -87,50 +160,6 @@ namespace TalkToApi.V1.Controllers
                 return Ok(usuarioResult);
             }
 
-        }
-
-
-        [HttpPost("", Name = "UsuarioCadastrar")]
-        public ActionResult Cadastrar([FromBody] UsuarioDTO usuarioDTO, [FromHeader(Name = "Accept")] string mediaType)
-        {
-            if (ModelState.IsValid)
-            {
-                ApplicationUser usuario = _mapper.Map<UsuarioDTO, ApplicationUser>(usuarioDTO);
-
-                var resultado = _userManager.CreateAsync(usuario, usuarioDTO.Senha).Result;
-
-                if (!resultado.Succeeded)
-                {
-                    List<string> erros = new List<string>();
-                    foreach (var erro in resultado.Errors)
-                    {
-                        erros.Add(erro.Description);
-                    }
-                    return UnprocessableEntity(erros);
-                }
-                else
-                {
-                    if (mediaType == CustomMediaType.Hateoas)
-                    {
-                        var usuarioDTOdb = _mapper.Map<ApplicationUser, UsuarioDTO>(usuario);
-                        usuarioDTOdb.Links.Add(new LinkDTO("_self", Url.Link("UsuarioCadastrar", new { id = usuario.Id }), "POST"));
-                        usuarioDTOdb.Links.Add(new LinkDTO("_obter", Url.Link("UsuarioObter", new { id = usuario.Id }), "GET"));
-                        usuarioDTOdb.Links.Add(new LinkDTO("_atualizar", Url.Link("UsuarioAtualizar", new { id = usuario.Id }), "PUT"));
-
-                        return Ok(usuarioDTOdb);
-                    }
-                    else
-                    {
-                        var usuarioResult = _mapper.Map<ApplicationUser, UsuarioDTOSemHyperlink>(usuario);
-                        return Ok(usuarioResult);
-                    }
-                }
-
-            }
-            else
-            {
-                return UnprocessableEntity(ModelState);
-            }
         }
 
         /*
@@ -189,39 +218,7 @@ namespace TalkToApi.V1.Controllers
                 return UnprocessableEntity(ModelState);
             }
         }
-
-
-
-        [HttpPost("login")]
-        public ActionResult Login([FromBody] UsuarioDTO usuarioDTO)
-        {
-            ModelState.Remove("Nome");
-            ModelState.Remove("ConfirmacaoSenha");
-
-            if (ModelState.IsValid)
-            {
-                ApplicationUser usuario = _usuarioRepository.Obter(usuarioDTO.Email, usuarioDTO.Senha);
-                if (usuario != null)
-                {
-                    //Login no Identity
-                    //_signInManager.SignInAsync(usuario, false);
-
-
-                    //retorna o Token (JWT)
-                    return GerarToken(usuario);
-                }
-                else
-                {
-                    return NotFound("Usuário não localizado!");
-                }
-            }
-            else
-            {
-                return UnprocessableEntity(ModelState);
-            }
-        }
-
-
+              
 
         [HttpPost("renovar")]
         public ActionResult Renovar([FromBody] TokenDTO tokenDTO)
@@ -241,7 +238,6 @@ namespace TalkToApi.V1.Controllers
 
             return GerarToken(usuario);
         }
-
 
         private TokenDTO BuildToken(ApplicationUser usuario)
         {
